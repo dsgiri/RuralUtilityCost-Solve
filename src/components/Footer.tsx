@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { DISCLAIMER_CONFIG } from '../config/disclaimer';
+import { FOOTER_LINKS } from '../config/footer';
 
 export function Footer() {
   return (
@@ -6,17 +7,19 @@ export function Footer() {
       <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 text-[10px] font-bold uppercase tracking-wider text-gray-500 mb-4 md:mb-0">
         <nav aria-label="Footer Navigation">
           <ul className="flex flex-wrap gap-4 sm:gap-6 m-0 p-0 list-none text-center">
-            <li><Link to="/about" className="hover:text-[#1A1A1A] py-3 inline-block">About Solve</Link></li>
-            <li><Link to="/contact" className="hover:text-[#1A1A1A] py-3 inline-block">Contact</Link></li>
-            <li><Link to="/legal" className="hover:text-[#1A1A1A] py-3 inline-block">Legal</Link></li>
-            <li><Link to="/license" className="hover:text-[#1A1A1A] py-3 inline-block">License</Link></li>
-            <li><a href="#" className="hover:text-[#1A1A1A] py-3 inline-block">GitHub</a></li>
+            {FOOTER_LINKS.map(link => (
+              <li key={link.name}>
+                <a href={link.url} className="hover:text-[#1A1A1A] py-3 inline-block transition-colors">
+                  {link.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
       <div className="text-[10px] text-gray-400 text-center md:text-right">
         Part of the <span className="font-bold">RuralUtilityCost.com</span> Ecosystem &copy; {new Date().getFullYear()}<br/>
-        <span className="font-normal italic mt-1 block">Calculators provide estimates for decision support only.</span>
+        <a href="https://ruralutilitycost.com/disclaimer" className="font-normal italic mt-1 block hover:text-[#1A1A1A] transition-colors">{DISCLAIMER_CONFIG.shortFooter}</a>
       </div>
     </footer>
   );

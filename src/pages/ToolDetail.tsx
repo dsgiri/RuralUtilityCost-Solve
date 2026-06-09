@@ -3,6 +3,7 @@ import { tools } from '../data';
 import { useFavorites } from '../hooks/useFavorites';
 import { SEO } from '../components/SEO';
 import { AdContainer } from '../components/AdContainer';
+import { CalculatorDisclaimer } from '../components/CalculatorDisclaimer';
 
 export function ToolDetail() {
   const { id } = useParams<{ id: string }>();
@@ -84,8 +85,10 @@ export function ToolDetail() {
               <p className="text-gray-500 max-w-sm text-xs italic">Adjust inputs on the left and click Compile.</p>
             </div>
             
+            <CalculatorDisclaimer />
+            
             <div className="border-l-2 border-[#1E3A8A] pl-4 py-2 mt-4">
-              <h4 className="text-xs font-bold uppercase mb-1">Disclaimer</h4>
+              <h4 className="text-xs font-bold uppercase mb-1">Placeholder Notice</h4>
               <p className="text-[11px] text-gray-600 italic leading-snug">
                 This is a placeholder interface for the calculation engine. Actual models are loaded from the master repository.
               </p>

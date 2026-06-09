@@ -1,9 +1,11 @@
+import React from 'react';
 import { Tool } from '../types';
 import { useFavorites } from '../hooks/useFavorites';
 import { Link } from 'react-router-dom';
 
 interface ToolCardProps {
   tool: Tool;
+  key?: React.Key;
 }
 
 export function ToolCard({ tool }: ToolCardProps) {

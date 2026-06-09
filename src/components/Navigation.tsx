@@ -6,12 +6,8 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: 'Home', path: '/' },
-    { name: 'Plan', path: '/#plan' },
-    { name: 'Forecast', path: '/#forecast' },
-    { name: 'What If', path: '/#what-if' },
-    { name: 'Predictor', path: '/#predictor' },
     { name: 'Solve', path: '/' },
+    { name: 'Network', path: '/portfolio' },
     { name: 'Favorites', path: '/favorites' },
   ];
 

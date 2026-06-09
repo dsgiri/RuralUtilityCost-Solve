@@ -11,9 +11,11 @@ import { Home } from './pages/Home';
 import { Favorites } from './pages/Favorites';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
-import { Legal } from './pages/Legal';
-import { License } from './pages/License';
+import { PrivacyPolicy } from './pages/PrivacyPolicy';
+import { TermsOfUse } from './pages/TermsOfUse';
+import { Disclaimer } from './pages/Disclaimer';
 import { ToolDetail } from './pages/ToolDetail';
+import { Portfolio } from './pages/Portfolio';
 import { NotFound } from './pages/NotFound';
 import { AnalyticsTracker } from './components/AnalyticsTracker';
 import { CookieBanner } from './components/CookieBanner';
@@ -59,9 +61,11 @@ export default function App() {
             <Route path="/favorites" element={<Favorites />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/legal" element={<Legal />} />
-            <Route path="/license" element={<License />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-use" element={<TermsOfUse />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/tool/:id" element={<ToolDetail />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

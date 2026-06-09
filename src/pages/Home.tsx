@@ -3,6 +3,7 @@ import { ToolCard } from '../components/ToolCard';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
 import { AdContainer } from '../components/AdContainer';
+import { CalculatorDisclaimer } from '../components/CalculatorDisclaimer';
 
 export function Home() {
   const featuredTools = tools.slice(0, 3);
@@ -87,12 +88,7 @@ export function Home() {
 
       <section className="px-4 sm:px-8 pb-16">
         <aside className="max-w-7xl mx-auto">
-          <div className="border-l-2 border-[#1E3A8A] pl-4 py-2">
-            <h4 className="text-xs font-bold uppercase mb-1">Methodology Notice</h4>
-            <p className="text-[11px] text-gray-600 italic leading-snug">
-              Results are decision-support estimates based on standard rural integration benchmarks. Verify major capital allocations independently.
-            </p>
-          </div>
+          <CalculatorDisclaimer className="!mt-0" />
         </aside>
       </section>
     </div>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { SEO } from '../components/SEO';
 
 export function Contact() {
@@ -21,15 +21,15 @@ export function Contact() {
   return (
     <div className="flex-grow bg-[#F9FAF8] py-16 px-4 sm:px-8">
       <SEO 
-        title="Contact Us | Solve | Rural Utility Cost" 
-        description="Get in touch with the Solve team regarding IoT calculators, automation planning, or general Rural Utility Cost inquiries." 
+        title="Contact Us | Rural Utility Cost" 
+        description="Get in touch with the Rural Utility Cost team. We are here to help with questions about our estimation tools." 
       />
       <div className="max-w-5xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-black text-[#1A1A1A] uppercase tracking-tighter mb-4">Contact the Team</h1>
+          <h1 className="text-4xl md:text-5xl font-black text-[#1A1A1A] uppercase tracking-tighter mb-4">Contact Us</h1>
           <div className="w-16 h-2 bg-[#1E3A8A] mb-8"></div>
           <p className="text-sm font-medium text-gray-700 leading-relaxed max-w-2xl">
-            Get in touch regarding the Solve hub or the broader Rural Utility Cost platform.
+            Get in touch regarding the Rural Utility Cost platform or any of its subdomains.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export function Contact() {
               <div>
                 <h3 className="font-bold text-base mb-1">General Inquiries</h3>
                 <p className="text-xs text-gray-500 mb-4">
-                  For press, partnership, or general inquiries directed to the master domain.
+                  For press, partnership, or general platform inquiries.
                 </p>
                 <a href="mailto:hello@ruralutilitycost.com" className="text-xs font-bold uppercase tracking-widest border-b border-[#1A1A1A] hover:text-[#1E3A8A] hover:border-[#1E3A8A] transition-colors pb-0.5">hello@ruralutilitycost.com</a>
               </div>
